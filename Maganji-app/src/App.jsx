@@ -1,6 +1,6 @@
 import React from 'react'
 import {Header, TransanctionList, IncomeExpense, Balance, AddTransanction} from './components'
-import { GlobalProvider } from './context/globalState'
+import {GlobalProvider} from './context/globalState'
 
 
 const App = () => {
