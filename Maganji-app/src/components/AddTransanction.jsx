@@ -13,7 +13,7 @@ const AddTransanction = () => {
     const newTransaction = {
       id: Math.floor(Math.random() * 100000000),
       text, 
-      amount
+      amount: +amount
     }
 
     AddTransanction(newTransaction)
@@ -34,7 +34,7 @@ const AddTransanction = () => {
             <label className='inline-block font-bold my-4' htmlFor='Amount'>Amount <br /><i>(negative-expense, positive- income)</i></label>
             <input id='Amount' value={amount} onChange={(e)=> setAmount(e.target.value)} className='border border-gray-300 rounded-md block text-base p-2 w-full' type='number' placeholder='Enter amount.....' />
           </div>
-          <button className='cursor-pointer bg-indigo-600 shadow-indigo-800 text-white block text-base p-2  mt-4 mb-12 w-full focus: outline-none'>Add Transanction</button>
+          <button type= 'submit' className='cursor-pointer bg-indigo-600 shadow-indigo-800 text-white block text-base p-2  mt-4 mb-12 w-full focus: outline-none'>Add Transanction</button>
         </form>
       </div>
     </div>
